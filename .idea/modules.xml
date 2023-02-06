@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/Learn_apache_camel_immq.iml" filepath="$PROJECT_DIR$/.idea/Learn_apache_camel_immq.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ibmmq_consumer/ibmmq_consumer.iml" filepath="$PROJECT_DIR$/ibmmq_consumer/ibmmq_consumer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ibmmq_mulitidb/ibmmq_mulitidb.iml" filepath="$PROJECT_DIR$/ibmmq_mulitidb/ibmmq_mulitidb.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ibmmq_producer/ibmmq_producer.iml" filepath="$PROJECT_DIR$/ibmmq_producer/ibmmq_producer.iml" />
+    </modules>
+  </component>
+</project>

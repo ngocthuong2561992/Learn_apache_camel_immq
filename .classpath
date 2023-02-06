@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry excluding="stb/com/vn/spring/routes/" kind="src" path="ibmmq_consumer/src/main/java"/>
+	<classpathentry kind="src" path="ibmmq_consumer/src/main/java/stb/com/vn/spring/routes"/>
+	<classpathentry kind="src" path="ibmmq_consumer/src/test/java"/>
+	<classpathentry excluding="stb/com/vn/spring/routes/" kind="src" path="ibmmq_mulitidb/src/main/java"/>
+	<classpathentry kind="src" path="ibmmq_mulitidb/src/main/java/stb/com/vn/spring/routes"/>
+	<classpathentry kind="src" path="ibmmq_mulitidb/src/test/java"/>
+	<classpathentry kind="src" path="ibmmq_producer/src/main/java"/>
+	<classpathentry kind="src" path="ibmmq_producer/src/test/java"/>
+	<classpathentry kind="lib" path="ibmmq_consumer/.mvn/wrapper/maven-wrapper.jar"/>
+	<classpathentry kind="lib" path="ibmmq_mulitidb/.mvn/wrapper/maven-wrapper.jar"/>
+	<classpathentry kind="lib" path="ibmmq_producer/.mvn/wrapper/maven-wrapper.jar"/>
+	<classpathentry kind="output" path="ibmmq_consumer/target/classes"/>
+</classpath>
