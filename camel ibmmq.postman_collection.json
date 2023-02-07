@@ -1,0 +1,259 @@
+{
+	"info": {
+		"_postman_id": "f386b34f-8c54-401b-993d-a6f33531505c",
+		"name": "camel ibmmq",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "18813619"
+	},
+	"item": [
+		{
+			"name": "ibmmq - 9198",
+			"item": [
+				{
+					"name": "send",
+					"protocolProfileBehavior": {
+						"strictSSL": false
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9198/ibmmq/api/send?adapter=CAMEL",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9198",
+							"path": [
+								"ibmmq",
+								"api",
+								"send"
+							],
+							"query": [
+								{
+									"key": "CAMEL,CONSUMER",
+									"value": "",
+									"disabled": true
+								},
+								{
+									"key": "adapter",
+									"value": "CAMEL"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "test",
+					"protocolProfileBehavior": {
+						"strictSSL": false
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9198/ibmmq/api/test",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9198",
+							"path": [
+								"ibmmq",
+								"api",
+								"test"
+							],
+							"query": [
+								{
+									"key": "CAMEL,CONSUMER",
+									"value": null,
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "hello",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true,
+						"strictSSL": false
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"John\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9290/camel-rest/api/hello",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9290",
+							"path": [
+								"camel-rest",
+								"api",
+								"hello"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getUser",
+					"protocolProfileBehavior": {
+						"strictSSL": false
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"John\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9290/camel-rest/api/getUser",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9290",
+							"path": [
+								"camel-rest",
+								"api",
+								"getUser"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getActor",
+					"protocolProfileBehavior": {
+						"strictSSL": false
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9290/camel-rest/api/getActor",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9290",
+							"path": [
+								"camel-rest",
+								"api",
+								"getActor"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "handleTransactional",
+					"protocolProfileBehavior": {
+						"strictSSL": false
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"John\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9290/camel-rest/api/handleTransactional",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9290",
+							"path": [
+								"camel-rest",
+								"api",
+								"handleTransactional"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "importExcel",
+					"protocolProfileBehavior": {
+						"strictSSL": false
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"John\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9290/camel-rest/api/importExcel",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9290",
+							"path": [
+								"camel-rest",
+								"api",
+								"importExcel"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

@@ -9,6 +9,10 @@
         <option value="$PROJECT_DIR$/ibmmq_mulitidb/pom.xml" />
         <option value="$PROJECT_DIR$/ibmmq_producer/pom.xml" />
         <option value="$PROJECT_DIR$/ibmmq_consumer/pom.xml" />
+        <option value="$PROJECT_DIR$/ibmmq-producer/pom.xml" />
+        <option value="$PROJECT_DIR$/ibmmq-consumer/pom.xml" />
+        <option value="$PROJECT_DIR$/camel-ibmmq/pom.xml" />
+        <option value="$PROJECT_DIR$/camelmultidb/pom.xml" />
       </list>
     </option>
   </component>

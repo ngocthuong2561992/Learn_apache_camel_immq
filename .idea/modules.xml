@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/Learn_apache_camel_immq.iml" filepath="$PROJECT_DIR$/.idea/Learn_apache_camel_immq.iml" />
-      <module fileurl="file://$PROJECT_DIR$/ibmmq_consumer/ibmmq_consumer.iml" filepath="$PROJECT_DIR$/ibmmq_consumer/ibmmq_consumer.iml" />
-      <module fileurl="file://$PROJECT_DIR$/ibmmq_mulitidb/ibmmq_mulitidb.iml" filepath="$PROJECT_DIR$/ibmmq_mulitidb/ibmmq_mulitidb.iml" />
-      <module fileurl="file://$PROJECT_DIR$/ibmmq_producer/ibmmq_producer.iml" filepath="$PROJECT_DIR$/ibmmq_producer/ibmmq_producer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/camel-ibmmq/camel-ibmmq.iml" filepath="$PROJECT_DIR$/camel-ibmmq/camel-ibmmq.iml" />
+      <module fileurl="file://$PROJECT_DIR$/camelmultidb/camelmultidb.iml" filepath="$PROJECT_DIR$/camelmultidb/camelmultidb.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ibmmq-consumer/ibmmq-consumer.iml" filepath="$PROJECT_DIR$/ibmmq-consumer/ibmmq-consumer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ibmmq-producer/ibmmq-producer.iml" filepath="$PROJECT_DIR$/ibmmq-producer/ibmmq-producer.iml" />
     </modules>
   </component>
 </project>

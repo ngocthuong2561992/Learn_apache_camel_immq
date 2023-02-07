@@ -2,19 +2,34 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="ibmmq_mulitidb" />
-        <module name="ibmmq_consumer" />
-        <module name="ibmmq_producer" />
+        <module name="camelmultidb" />
+        <module name="ibmmq-consumer" />
+        <module name="ibmmq-producer" />
+        <module name="camel-ibmmq" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="camel-ibmmq" target="19" />
+      <module name="camelmultidb" target="19" />
+      <module name="ibmmq-consumer" target="19" />
+      <module name="ibmmq-producer" target="19" />
       <module name="ibmmq_consumer" target="1.5" />
       <module name="ibmmq_mulitidb" target="1.5" />
       <module name="ibmmq_producer" target="1.5" />
+      <module name="wrapper" target="1.5" />
     </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="camel-ibmmq" options="-parameters" />
+      <module name="camelmultidb" options="-parameters" />
+      <module name="ibmmq-consumer" options="-parameters" />
+      <module name="ibmmq-producer" options="-parameters" />
+    </option>
   </component>
 </project>

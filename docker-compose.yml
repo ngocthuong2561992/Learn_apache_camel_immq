@@ -1,0 +1,86 @@
+version: '2'
+volumes:
+  ibmmq:
+    driver: local
+services:
+  # ibmmq:
+  #   image: 'docker.io/ibmcom/mq'
+  #   environment:
+  #     - LICENSE=accept
+  #     - MQ_QMGR_NAME=QM1
+  #   ports:
+  #     - '1414:1414'
+  #     - '9443:9443'
+  #   volumes:
+  #     - ibmmq:/data/ibmmq
+  #   container_name: ibmmq
+
+#  redis:
+#    image: redis:latest
+#    container_name: redis-server
+#    ports:
+#      - '6379:6379'
+
+  mssql:
+    image: mcr.microsoft.com/mssql/server:latest
+    container_name: mssql
+    hostname: mssql
+    restart: always
+    environment:
+      SA_PASSWORD: A!123456
+      ACCEPT_EULA: Y
+#    volumes:
+#      - mssqlvolume:/var/opt/mssql/data # thư mục lưu DB
+#      - ./bk:/var/opt/mssql/backup      # thư  mục chứa file backup
+    ports:
+      - '1433:1433'
+
+  mariadb:
+    image: mariadb
+    environment:
+      MYSQL_ROOT_PASSWORD: 123456
+      MYSQL_DATABASE: sakila
+      MYSQL_USER: admin
+      MYSQL_PASSWORD: 123456
+    restart: on-failure
+    ports:
+      - "3308:3306"
+    command: ['--lower_case_table_names=1']
+#    command: ['mysqld', '--character-set-server=utf8mb4', '--collation-server=utf8mb4_unicode_ci', '--lower_case_table_names=1']
+
+#services:
+#  grpc-service:
+#    build:
+#      context: grpc
+#      dockerfile: Dockerfile
+#    container_name: grpc-service
+#    image: sacom-grpc:latest
+#    ports:
+#      - "9000:9000"
+
+#  orchestrator-service:
+#    build:
+#      context: orchestrator-service
+#      dockerfile: Dockerfile
+#    container_name: orchestrator-service
+#    image: sacom-orchestrator:latest
+#    ports:
+#      - "9000:9000"
+
+#  receiver-service:
+#    build:
+#      context: receiver-service
+#      dockerfile: Dockerfile
+#    container_name: receiver-service
+#    image: sacom-receiver-service:latest
+#    ports:
+#      - "9002:9002"
+
+#  sender-service:
+#    build:
+#      context: sender-service
+#      dockerfile: Dockerfile
+#    container_name: sender-service
+#    image: sacom-sender:latest
+#    ports:
+#      - "9001:9001"
